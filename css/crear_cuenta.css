@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.cuenta{
+  background-image: url(../imagenes/fondo2.jpg);
+  /* Reemplaza con la ruta real de tu imagen */
+  background-size: 2100px;
+  /* Ajusta el tamaño de la imagen para cubrir toda la página */
+  background-position: center;
+  /* Centra la imagen en la página */
+}
+.cuenta__cuadro{
+    width: 330px;
+    background: #090909;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 120px;
+    padding: 5px 5px 30px 5px;
+    border-top:35px solid #141414;
+    border-right:35px solid #141414;
+    border-left:35px solid #141414;
+    opacity: 0.8;
+}
+.form__entrada{
+    width: 320px;
+    height: 35px;
+    border-radius: 6px;
+    font-family: verdana;
+    font-weight: 900;
+}
+
+.form__boton{
+    width: 324px;
+    height: 45px;
+    border-radius: 6px;
+    background: blue;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.form__titulo{
+    font-size: 30px;
+    font-family: fantasy;
+}
+.cuenta__marca{
+    font-size: 30px;
+    padding-left: 190px;
+    font-weight: 900;
+}
