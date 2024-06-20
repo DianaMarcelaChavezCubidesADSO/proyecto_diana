@@ -22,6 +22,11 @@
     border-left:35px solid #141414;
     opacity: 0.8;
 }
+.form_button1{
+  display: flex;
+  justify-content: space-between;
+  
+}
 .form__entrada{
     width: 320px;
     height: 35px;
@@ -42,9 +47,15 @@
 .form__titulo{
     font-size: 30px;
     font-family: fantasy;
+    
 }
 .cuenta__marca{
     font-size: 30px;
     padding-left: 190px;
     font-weight: 900;
+  /* padding: 5px 20px;
+  border-radius: 6px; */
+  /* background: blue;
+  color: #ffffff; */
+
 }
