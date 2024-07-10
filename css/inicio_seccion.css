@@ -1,34 +1,98 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-/* Barra de menú */
-.menu {
-    background-color: #FF0000; /* Rojo */
-    color: #FFFFFF; /* Blanco */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+:root{
+    --Alizarin_Crimson:#E1222A;
+    --Cod_Gray: #1A1A1A;
+    --Swiss_Coffee:#DAD2D2;
+    --Sea_Pink:#EC8C94;
+    --white: #fff;
+    --max-width: 1400px;
+    --padding: 10px;
+    --margin: 10 px;
+    --border-radius: 8 px;
+    --transition: 1s;
+    --font-size: 16px;
 }
-
-.logo {
-    font-weight: bold;
-    font-size: 24px;
+::selection{
+    /* background: var(--Swiss_Coffee); */
+    color: var(--white);
 }
-
-.menu-items {
+body{
+    background: var(--Black);
+    color: var(--white);
+    font-size: var(--font-size);
+    font-family: "Roboto", sans-serif;
+    line-height: 24px;
+}
+ul{
     list-style: none;
+   }
+   a{
+    text-decoration: none;
+   }
+.container{
+    margin: var(--margin);
+    width: 100%;
+    background-color: var(--white);
+    max-width: 1200px;
+    margin: 0;
+}
+.nav-main{
+   display: flex; 
+   align-items: center;
+   font-size: var(--font-size);
+   justify-content: space-between;
+   
+}
+/* .nav_logo{
+    width: 100px; 
+}
+.logo {
+    text-align: center; 
+  } */
+.nav-main ul{
     display: flex;
 }
+.nav-main ul li{
+    padding: 55px;
+}
+.nav-main ul li a:hover{
+    border-bottom: 2px solid var(--Cod_Gray);
+    padding-bottom: 2px;
+    transition: var(--transition);
+    color: var(--Cod_Gray);
+}
+.nav_menu a {
+    color: var(--Alizarin_Crimson);
 
-.menu-item {
-    margin-right: 20px;
+}
+.search{
+    display: flex;
+    justify-content: end;
 }
 
-.menu-item:hover {
-    text-decoration: underline;
+.search__form{
+    border: solid 1px var(--Ripe_Lemon);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin);
+    padding: var(--padding);
+    /* Gridd */
+    display: inline-grid;
+    justify-content: end;
+    grid-template-columns: auto 40px;
+    grid-template-rows: auto;
+    gap: 4px;
 }
+.input{
+    width: 100%;
+    padding: var(--padding);
+    border: none;
+    outline: none;
+    border: solid 1px var(--Cod_Gray); 
+    font-size: 1rem;
+    color: var(--Cod_Gray);
+  }

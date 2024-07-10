@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+ background-color: var(--white);
+}
+:root{
+    --Alizarin_Crimson:#E1222A;
+    --Cod_Gray: #1A1A1A;
+    --Swiss_Coffee:#DAD2D2;
+    --Sea_Pink:#EC8C94;
+    --white: #fff;
+    --max-width: 1400px;
+    --padding: 10px;
+    --margin: 10 px;
+    --border-radius: 8 px;
+    --transition: 1s;
+    --font-size: 16px;
+    --color-hover:rgb(247, 139, 62);
+}
+header{
+    /* border: 2px solid var(--white); */
+    background-color: #E1222A;
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    top: 0;
+    z-index: 100;
+    color: var(--Swiss_Coffee);
+}
+header .contenedor{
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+/* logo */
+
+header .logo ion-icon{
+    font-size: 35px;
+    color: var(--Cod_Gray);
+    margin-right: 5px;
+}
+header .logo span{
+    font-size: 19px;
+    font-weight:100px;
+    display: flex;
+    
+
+}
+/* menu opcoiones */
+header .menu-opcional{
+    border: 2px solid var(--Cod_Gray);
+    height: auto;
+}
+header .menu-opcional ul{
+    display:flex;
+    flex-direction: row;
+}
+header .menu-opcional li{
+   list-style: none;
+   margin: 15px;
+
+}
+header .menu-opcional a{
+    color: var(--Cod_Gray);
+    text-decoration: none;
+    transition: var(--transition);
+}
+header .menu-opcional a:hover{
+    color: var(--Swiss_Coffee);
+}
+/* controles usuarios  */
+header .controles-usuarios{
+    border: 2px solid blue;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header .controles-usuarios ion-icon{
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--Cod_Gray);
+}
+header .controles-usuarios ion-icon:hover{
+    color: var(--white);
+}
+header #botton-sing-up{
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40pz;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--Cod_Gray);
+}
+header #botton-sing-up:hover{
+    background-color:var(--color-hover) ;
+}
+header #botton-menu{
+    display: none;
+}
