@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --background-color: rgb(11,11,11);
+    --color_principál:rgb(228, 133, 51);
+    --color_texto:rgb(255,255,255);
+    --color-hover:rgb(243,175,125);
+
+}
+body{
+    background-image: url(proyecto_diana/imagenes/fondo1.jpg);
+    /* Reemplaza con la ruta real de tu imagen */
+    background-size: 3000px;
+    /* Ajusta el tamaño de la imagen para cubrir toda la página */
+    background-position: center;
+    /* Centra la imagen en la página */
+    
+}
+/* encabezado */
+header{
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    color: var(--color_texto);
+}
+header .contenedor{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+/* logo */
+/* header .logo{
+    border: 2px solid cyan;
+
+} */
+header .logo ion-icon{
+    font-size: 35px;
+    color: var(--color_principál);
+}
+/* menu opciones */
+header .menu-opciones{
+
+    height: auto;
+}
+header .menu-opciones ul{
+    display: flex;
+    flex-direction: row;
+}
+header .menu-opciones li {   
+    list-style: none;
+    margin: 15px;
+}
+header .menu-opciones a{
+    color: var(--color_texto);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+header .menu-opciones a:hover{
+    color: var(--color_principál);
+}
+/* controle usuarios */
+header .controles-usuarios{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+header .controles-usuarios ion-icon{
+    font-size:25px;
+    cursor: pointer;
+    color: var(--color_principál);
+}
+header .controles-usuarios ion-icon:hover{
+    color: var(--color-hover);
+}
+
+
+header #btn-sign-up:hover{
+    background-color: var(--color-hover);
+}
+header #btn-menu{
+    display: none;
+}
+.botond{
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--color_principál);
+    color: var(--color_texto);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;  
+}
+/* parrafo imagen  */
+.parrafo_imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    
+}
